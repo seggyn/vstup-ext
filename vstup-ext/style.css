@@ -1,0 +1,33 @@
+body {
+    width: 250px;
+}
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#refresh {
+    background-color: #4CAF50;
+}
+#reset {
+    background-color: #e91e63;
+}
+#refresh:hover {
+    background-color: #45a049;
+}
+#reset:hover {
+    background-color: #c71d57;
+}
