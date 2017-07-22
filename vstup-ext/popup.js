@@ -6,7 +6,6 @@ $(document).ready(function(){
 			count: parseInt($('#count').val())
 		};
 	    chrome.tabs.getSelected(null, function(tab) {
-	    	console.log(array);
 	    	if (array.priority != '' && array.points != '' && array.count != '') {
 				chrome.tabs.executeScript(null,
 	      		  {code:"vstup.analysys("+array.points+", "+array.priority+", "+array.count+");"
