@@ -12,7 +12,7 @@ var vstup =  {
 				points: parseFloat($(this.selector).eq(i).find('td').eq(3).text())
 			};
 			if ((priority != 0 && (isNaN(raw.priority) || raw.priority > priority))
-				 || ( points != 0 && raw.points < points ) )
+				 || (points != 0 && raw.points < points))
 				this.hide(i);
 			if ($(this.selector).eq(i).css('display').indexOf('none') === -1)
 			 	$(this.selector).eq(i).find('td').eq(0).text(counter++);
@@ -23,6 +23,7 @@ var vstup =  {
 	reset: function() {
 		for(var i = 2; i < $(this.selector).length; i++) {
 			$(this.selector).eq(i).css('display', '');
+			$(this.selector).eq(i).find('td').eq(0).text(i-1);
 		}
 	}
 }
